@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes Especiais | Salão Elegance</title>
+    <link rel="stylesheet" href="style/pacote.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Salão Elegance</div>
+        <nav>
+            <ul>
+                <li><a href="../inicio/inicio.html">Início</a></li>
+                <li><a href="#packages">Pacotes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero-pacotes" class="hero fade-in">
+        <h1>Pacotes Especiais</h1>
+        <p>Descubra as combinações exclusivas criadas para o seu bem-estar.</p>
+    </section>
+
+    <section id="packages" class="fade-in">
+        <h2>Conheça nossos Pacotes</h2>
+        <div class="packages-container">
+            <div class="package-card">
+                <img src="img/massagem.webp" alt="Pacote Relaxamento">
+                <h3>Pacote Relaxamento</h3>
+                <p>Inclui massagem corporal completa, hidratação facial e aromaterapia. Uma experiência de puro relaxamento.</p>
+                <p><strong>Preço: R$ 250,00</strong></p>
+                <button class="btn-agendar">Agendar</button>
+            </div>
+            <div class="package-card">
+                <img src="img/tranformação.webp" alt="Pacote Transformação">
+                <h3>Pacote Transformação</h3>
+                <p>Inclui corte, coloração, manicure e pedicure. Perfeito para renovar o visual.</p>
+                <p><strong>Preço: R$ 400,00</strong></p>
+                <button class="btn-agendar">Agendar</button>
+            </div>
+            <div class="package-card">
+                <img src="img/noiva.jpeg" alt="Pacote para Noivas">
+                <h3>Pacote Noivas</h3>
+                <p>Inclui penteado, maquiagem, manicure e preparação especial para o grande dia.</p>
+                <p><strong>Preço: R$ 800,00</strong></p>
+                <button class="btn-agendar">Agendar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Salão Elegance. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn-agendar').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Você será redirecionado para a página de agendamento!');
+                window.location.href = '../funcionarios/funcionario.html';
+            });
+        });
+    </script>
+</body>
+</html>

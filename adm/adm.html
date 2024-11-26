@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Funcionários</title>
+    <link rel="stylesheet" href="style/adm.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="cadastro">
+            <h2 id="titulo-cadastro">Cadastro de Funcionário</h2>
+            <form id="formulario" class="form-cadastro">
+                <input type="text" id="nome" placeholder="Nome do Funcionário" required>
+                <input type="text" id="cargo" placeholder="Cargo" required>
+                <input type="text" id="carga_horaria" placeholder="Carga Horária (ex: 08:00 - 16:00)" required>
+                <input type="time" id="tempo_servico" placeholder="Tempo de Serviço (ex: 00:30:00)" required>
+                <input type="number" step="0.01" id="precoservico" placeholder="Preço do Serviço (ex: 50.00)" required>
+                <button type="button" id="btnCadastrar">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="lista-cadastrados">
+            <h2>Funcionários Cadastrados</h2>
+            <ul id="lista-funcionarios">
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/adm.js"></script>
+</body>
+</html>

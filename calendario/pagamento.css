@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(135deg, #4a2a4d, #8d517f);
+    color: #f9f9f9;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffdd57;
+    transform: scale(1.05);
+}
+
+section {
+    max-width: 750px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+.staff-details h3, 
+.date-time-section h3, 
+.payment-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.staff-details p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+
+.staff-details img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Campos de entrada */
+.date-time-section label,
+.payment-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.date-time-section input,
+.payment-section input {
+    width: 100%;
+    padding: 12px 0px 12px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.staff-details input {
+    width: 100%;
+    padding: 12px 0px 12px 5px;
+    text-align: center;
+    background: transparent;
+    border: none; 
+    color: #fff; 
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none; 
+}
+
+
+
+.date-time-section input::placeholder,
+.payment-section input::placeholder {
+    color: #ccc;
+}
+
+.date-time-section input:focus,
+.payment-section input:focus {
+    outline: none;
+    border-color: #8d517f;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 8px #8d517f;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #8d517f;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #6a2c65;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#success-message {
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    background: rgba(0, 255, 127, 0.15);
+    border: 2px solid rgba(0, 255, 127, 0.6);
+    border-radius: 10px;
+    display: none;
+}
+
+#success-message h3 {
+    color: #32cd32;
+    font-size: 1.4rem;
+}
+
+.hidden {
+    display: none;
+}

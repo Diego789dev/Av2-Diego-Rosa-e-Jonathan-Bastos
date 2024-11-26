@@ -1,0 +1,270 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #3e273a, #7b4675);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Links de Login e Cadastro */
+.auth-links {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.auth-links a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.auth-links .login-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.auth-links .login-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.auth-links .register-btn {
+    background: #7b4675;
+    color: #fff;
+}
+
+.auth-links .register-btn:hover {
+    background: #5a2c58;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #3e273a, #7b4675);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+#schedule {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #7b4675;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a2c58;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+form button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+    transform: translateY(-3px);
+}
+
+/* Seção de Serviços */
+#services {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-card h3 {
+    margin: 10px 0;
+}
+
+#about {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta o espaçamento entre as imagens */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que as imagens fiquem em várias linhas em telas menores */
+}
+
+.about-images img {
+    width: 220px; /* Ajuste fino no tamanho das imagens */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 15px; /* Adiciona espaço interno ao redor de cada imagem */
+    transition: transform 0.3s ease; /* Adiciona um efeito de zoom */
+}
+
+.about-images img:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+
+
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
+
+.image-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.option {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.option img:hover {
+    transform: scale(1.1);
+}
+
+.option p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.option a{
+    text-decoration: none;
+}
+

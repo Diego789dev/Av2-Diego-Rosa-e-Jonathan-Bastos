@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Salão Elegance</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Salão Elegance</div>
+        <nav>
+            <a href="inicio/inicio.html">Voltar para o início</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <h2>Faça Login</h2>
+            <form id="loginForm">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+                
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="admCheckbox"> ADM
+                    </label>
+                    <label>
+                        <input type="checkbox" id="clientCheckbox"> Cliente
+                    </label>
+                </div>
+                
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

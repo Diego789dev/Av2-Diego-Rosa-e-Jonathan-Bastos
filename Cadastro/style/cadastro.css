@@ -1,0 +1,101 @@
+/* Estilo principal para páginas de Login e Cadastro */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3e273a, #7b4675);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura total da janela */
+}
+
+/* Seção de formulário */
+.login-section, .register-section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.login-section h2, .register-section h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Labels e campos do formulário */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 90%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #ccc;
+}
+
+/* Botão de envio */
+form button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #7b4675;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #5a2c58;
+    transform: translateY(-2px);
+}
+
+/* Link "Voltar ao início" */
+header nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha um Funcionário</title>
+    <link rel="stylesheet" href="style/funcionario.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Salão Elegance</div>
+        <nav>
+            <ul>
+                <li><a href="../inicio/inicio.html">Início</a></li>
+                <li><a href="../servicos/servico.html">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero-funcionarios">
+        <h1>Escolha o Funcionário</h1>
+        <p>Veja os nossos profissionais e encontre o melhor horário para você.</p>
+    </section>
+
+    <section id="filter">
+        <h2>Filtrar Funcionários</h2>
+        <form id="filter-form">
+            <label for="specialty">Especialidade:</label>
+            <select id="specialty" name="specialty">
+                <option value="all">Todos</option>
+                <option value="Cortes de cabelo e Barbearia">Cortes de cabelo e Barbearia</option>
+                <option value="Massagens terapeuticas e relaxamento">Massagens terapêuticas e relaxamento</option>
+                <option value="Manicure e pedicure">Manicure e pedicure</option>
+                <option value="Esteticista">Esteticista</option>
+                <option value="Maquiador">Maquiador</option>
+            </select>
+        </form>
+    </section>
+
+    <section id="team">
+        <h2>Nossa Equipe</h2>
+        <div class="team-container" id="team-container">
+        </div>
+    </section>
+
+    <section id="availability">
+        <h2>Disponibilidade de <span id="employee-name"></span></h2>
+        <p id="employee-info"></p>
+        <div id="calendar">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Salão Elegance. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/funcionario.js"></script>
+</body>
+</html>
